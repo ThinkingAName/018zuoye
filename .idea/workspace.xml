@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce2deadc-2e4e-4dbf-bce8-1c467c49d447" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/imgShow.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/randomColor.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -17,21 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="countDown.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/countDown.html">
+      <file leaf-file-name="randomColor.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/randomColor.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="67" column="39" lean-forward="false" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="imgShow.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/imgShow.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-132">
-              <caret line="47" column="24" lean-forward="false" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+            <state relative-caret-position="343">
+              <caret line="69" column="23" lean-forward="false" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -54,6 +44,7 @@
       <list>
         <option value="$PROJECT_DIR$/countDown.html" />
         <option value="$PROJECT_DIR$/imgShow.html" />
+        <option value="$PROJECT_DIR$/randomColor.html" />
       </list>
     </option>
   </component>
@@ -63,7 +54,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="300" />
     <option name="y" value="65" />
     <option name="width" value="1346" />
@@ -129,7 +120,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526464039209</updated>
-      <workItem from="1526464041223" duration="4513000" />
+      <workItem from="1526464041223" duration="7380000" />
     </task>
     <task id="LOCAL-00001" summary="新增倒计时页面跳转">
       <created>1526468897736</created>
@@ -138,14 +129,21 @@
       <option name="project" value="LOCAL" />
       <updated>1526468897736</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="新增图片展开跳转">
+      <created>1526470540161</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1526470540161</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4513000" />
+    <option name="totallyTimeSpent" value="7380000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="300" y="65" width="1346" height="781" extended-state="0" />
+    <frame x="300" y="65" width="1346" height="781" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962406" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -175,13 +173,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="新增倒计时页面跳转" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增倒计时页面跳转" />
+    <MESSAGE value="新增图片展开跳转" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增图片展开跳转" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/imgShow.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="71" column="7" lean-forward="true" selection-start-line="71" selection-start-column="7" selection-end-line="71" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/countDown.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
@@ -190,10 +197,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imgShow.html">
+    <entry file="file://$PROJECT_DIR$/randomColor.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-132">
-          <caret line="47" column="24" lean-forward="false" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+        <state relative-caret-position="343">
+          <caret line="69" column="23" lean-forward="false" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
           <folding />
         </state>
       </provider>

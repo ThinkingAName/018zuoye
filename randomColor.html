@@ -1,0 +1,80 @@
+<!doctype html>               <!--申明html文档-->
+<html>
+<head>
+    <meta charset="utf-8">      <!--字符编码为国际编码-->
+    <meta name="Author" content="40期风屿JS——不懂就问">    <!--网页创建者-->
+    <meta name="Keywords" content="作业，练习题">         <!--供搜索引擎搜索匹配的关键-->
+    <meta name="description" content="课后练习题作业，熟悉课堂学习操作">  <!--在搜索有结果页面显示的网页描述-->
+    <title>第2次课后作业</title>   <!--网页标题-->
+    <!--
+          <link rel="stylesheet" type="text/css" href="css/common.css">
+          <link rel="stylesheet" type="text/css" href="css/index.css">
+          <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+          <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+          -->
+    <style>
+        body, p, ul, dl, dd, ol, h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+        }
+
+        ul, ol {
+            padding-left: 0;
+            list-style: none;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 0;
+        }
+
+        em, i {
+            font-style: normal; /*设置字体样式：正常显示（就是不倾斜）*/
+        }
+
+        strong, b {
+            font-weight: normal; /*设置字体加粗：正常显示（就是不加粗）*/
+        }
+
+        a {
+            text-decoration: none; /*去掉下划线*/
+        }
+        li{
+            float: left;
+            width: 50px;
+            height: 20px;
+            margin: 5px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li></li>
+    </ul>
+
+<script>
+    var liDom = document.getElementsByTagName("li"),
+        ulDom = document.getElementsByTagName("ul")[0],
+        r,
+        g,
+        b,
+        a;
+    for (var i = 1 ; i <= 50; i++) {
+        r = Math.floor(Math.random()*256);
+        g = Math.floor(Math.random()*256);
+        b = Math.floor(Math.random()*256);
+        a = Math.round(Math.random()*10)/10;
+        console.log(r);
+        ulDom.innerHTML+='<li></li>';
+        liDom = document.getElementsByTagName("li");
+        liDom[i].style.backgroundColor = "blue";
+
+    }
+
+
+</script>
+</body>
+</html>
