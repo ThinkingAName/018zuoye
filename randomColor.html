@@ -67,11 +67,9 @@
         g = Math.floor(Math.random()*256);
         b = Math.floor(Math.random()*256);
         a = Math.round(Math.random()*10)/10;
-        console.log(r);
         ulDom.innerHTML+='<li></li>';
         liDom = document.getElementsByTagName("li");
-        liDom[i].style.backgroundColor = "blue";
-
+        liDom[i].style.backgroundColor = "rgba(" + r + ',' + g + ',' + b + ','+ a +")";
     }
 
 
