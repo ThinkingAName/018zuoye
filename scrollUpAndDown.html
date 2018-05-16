@@ -1,0 +1,206 @@
+<!doctype html>               <!--申明html文档-->
+<html>
+<head>
+    <meta charset="utf-8">      <!--字符编码为国际编码-->
+    <meta name="Author" content="40期风屿JS——不懂就问">    <!--网页创建者-->
+    <meta name="Keywords" content="作业，练习题">         <!--供搜索引擎搜索匹配的关键-->
+    <meta name="description" content="课后练习题作业，熟悉课堂学习操作">  <!--在搜索有结果页面显示的网页描述-->
+    <title>第18-2次课后作业</title>   <!--网页标题-->
+    <!--
+          <link rel="stylesheet" type="text/css" href="css/common.css">
+          <link rel="stylesheet" type="text/css" href="css/index.css">
+          <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+          <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+          -->
+    <style>
+        body, p, ul, dl, dd, ol, h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+        }
+
+        ul, ol {
+            padding-left: 0;
+            list-style: none;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 0;
+        }
+
+        em, i {
+            font-style: normal; /*设置字体样式：正常显示（就是不倾斜）*/
+        }
+
+        strong, b {
+            font-weight: normal; /*设置字体加粗：正常显示（就是不加粗）*/
+        }
+
+        a {
+            text-decoration: none; /*去掉下划线*/
+        }
+        .window{
+            position: relative;
+            overflow: hidden;
+            width: 220px;
+            height: 400px;
+            margin: 50px auto;
+        }
+        .img{
+            position: absolute;
+            top: 30px;
+            left: 0;
+            width: 450px;
+            font-size: 0;
+        }
+        button{
+            position: absolute;
+            width: 220px;
+            height: 30px;
+        }
+        img{
+            width: 220px;
+            height: 230px;
+        }
+        i{
+            position: absolute;
+            top:50%;
+            width: 30px;
+            height:30px;
+            font-size: 24px;
+            text-align: center;
+            line-height: 30px;
+            background-color: rgba(110,110,110,.4);
+        }
+        .up{
+            top: 0;
+        }
+        .down{
+            bottom: 0;
+        }
+        .left{
+            left:0;
+        }
+        .right{
+            right:0;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="window">
+        <div class="img">
+            <img src="images/scroll1.png" width="224px" height="239px" alt="" />
+            <img src="images/scroll2.png" width="220px" height="240px" alt="" />
+            <img src="images/scroll3.png" width="224px" height="234px" alt="" />
+        </div>
+        <button class="up">上移</button>
+        <button class="down">下移</button>
+        <i class="left"><</i>
+        <i class="right">></i>
+    </div>
+
+<script>
+    var upBtn = document.getElementsByClassName("up")[0],
+        downBtn = document.getElementsByClassName("down")[0],
+        leftBtn = document.getElementsByClassName("left")[0],
+        rightBtn = document.getElementsByClassName("right")[0],
+        img = document.getElementsByClassName("img")[0],
+        // 设置move 移动的初始位置和，定位相同。
+        moveYPx = 30,
+        moveXPx = 0,
+        // 得到move盒子的高度
+        moveH = window.getComputedStyle(img).height,
+        // 得到move盒子的宽度
+        moveW = window.getComputedStyle(img).width,
+
+        /*
+            计算向上移动的最大距离，保证图片从最下面一直充满整个 window高，340 视窗。
+            moveH： 为移动盒子的大小，最大移动盒子大小。
+            movePx：为盒子相对的初始位置，
+            340  ： 为显示窗口的大小；
+            moveUPMax 为向上移动且必须填满正个窗口的最大位移，以为是向上移动，所以为负值；
+         */
+        moveUPMax = -(parseFloat(moveH) - moveYPx -340),
+        /*
+           计算向下移动的最大距离，保证图片从最下面一直充满整个 window高，340 视窗。
+           当向下移动时，最多移动的初始位置，所以，最大位移坐标为 初始值30
+        */
+        moveDownMax = parseFloat(moveH) +  moveUPMax -340,
+        /*
+           计算向左移动的最大距离，保证图片从最下面一直充满整个 window宽，220px。
+           moveW： 为移动盒子的宽。
+           moveXPx：为盒子相对的初始位置，
+           220 ： 为显示窗口的宽度；
+           moveLfMax 为向左移动且必须填满正个窗口的最大位移，以为是向左移动，所以为负值；
+        */
+        moveLfMax = -(parseFloat(moveW) - moveXPx -220),
+        // 向右移动，最大位置为初四，为0；
+        moveRhMax = 0;
+        console.log(moveW);
+    // 按住向上移动，
+        upBtn.onmousedown = function () {
+            function moveUP() {
+                if (moveYPx == moveUPMax) {
+                    clearInterval(upTimer);
+                    alert("没有更多内容了")
+                }else {
+                    img.style.top = moveYPx + 'px';
+                    moveYPx -=2;
+                    moveYPx = Math.max(moveYPx,moveUPMax);
+                }
+            }
+           upTimer = setInterval(moveUP,50);
+        };
+    // 放开 停止移动；
+        upBtn.onmouseup = function () {
+            clearInterval(upTimer);
+        };
+    // 按住向下移动，
+        downBtn.onmousedown = function () {
+            function moveDown() {
+                img.style.top = moveYPx + 'px';
+                moveYPx +=2;
+                moveYPx = Math.min(moveYPx,moveDownMax)
+            }
+            downTimer = setInterval(moveDown,50);
+        };
+    // 放开 停止移动；
+        downBtn.onmouseup = function () {
+            clearInterval(downTimer);
+        };
+    // hover 向左移动，
+        leftBtn.onmouseenter = function () {
+            function moveLeft() {
+                img.style.left = moveXPx + 'px';
+                moveXPx -=2;
+                moveXPx = Math.max(moveXPx,moveLfMax)
+            }
+            leftBtn.style.backgroundColor = 'rgba(110,110,110,.8)';
+            leftTimer = setInterval(moveLeft,50);
+        };
+    // 离开 停止移动；
+        leftBtn.onmouseleave = function () {
+            clearInterval(leftTimer);
+            leftBtn.style.backgroundColor = '';
+        };
+    // hover 向右移动，
+    rightBtn.onmouseenter = function () {
+        function moveRight() {
+            img.style.left = moveXPx + 'px';
+            moveXPx +=2;
+            moveXPx = Math.min(moveXPx,moveRhMax)
+        }
+        rightBtn.style.backgroundColor = 'rgba(110,110,110,.8)';
+        rightTimer = setInterval(moveRight,50);
+    };
+    // 放开 停止移动；
+    rightBtn.onmouseleave = function () {
+        clearInterval(rightTimer);
+        rightBtn.style.backgroundColor = '';
+    };
+</script>
+</body>
+</html>
