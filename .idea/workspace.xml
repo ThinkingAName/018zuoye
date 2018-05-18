@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce2deadc-2e4e-4dbf-bce8-1c467c49d447" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/ImgFlyInto.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -136,7 +135,7 @@
       <updated>1526464039209</updated>
       <workItem from="1526464041223" duration="7727000" />
       <workItem from="1526474240505" duration="1267000" />
-      <workItem from="1526657643915" duration="6493000" />
+      <workItem from="1526657643915" duration="6532000" />
     </task>
     <task id="LOCAL-00001" summary="新增倒计时页面跳转">
       <created>1526468897736</created>
@@ -152,11 +151,18 @@
       <option name="project" value="LOCAL" />
       <updated>1526470540161</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="新增图片飞入">
+      <created>1526664365489</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1526664365489</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15487000" />
+    <option name="totallyTimeSpent" value="15526000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-41" y="0" width="1346" height="781" extended-state="0" />
@@ -190,7 +196,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="新增倒计时页面跳转" />
     <MESSAGE value="新增图片展开跳转" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增图片展开跳转" />
+    <MESSAGE value="新增图片飞入" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增图片飞入" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
