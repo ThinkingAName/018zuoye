@@ -1,0 +1,80 @@
+<!doctype html>               <!--申明html文档-->
+<html>
+ <head>
+  <meta charset="utf-8">      <!--字符编码为国际编码-->
+  <meta name="Author" content="JS40期风屿——不懂就问">    <!--网页创建者-->
+  <meta name="Keywords" content="作业，练习题">         <!--供搜索引擎搜索匹配的关键-->
+  <meta name="description" content="课后练习题作业，熟悉课堂学习操作">  <!--在搜索有结果页面显示的网页描述-->
+  <title>第2次课后作业</title>   <!--网页标题-->  
+  <style>
+	body, p, ul, dl, dd, ol, h1, h2, h3, h4, h5, h6{ margin:0;}
+	ul,ol{ padding-left:0;list-style:none;}
+	table{ border-collapse:collapse; }
+	th, td{ padding: 0; }
+	em,i{ font-style:normal;/*设置字体样式：正常显示（就是不倾斜）*/}
+	strong,b{ font-weight:normal;/*设置字体加粗：正常显示（就是不加粗）*/}
+	a{ text-decoration:none;/*去掉下划线*/}
+
+    .imgBox{
+        position:relative;
+        width: 500px;
+        height: 500px;
+        margin: 50px auto;
+        background-color: gray;
+    }
+  </style>
+     <script src="js/animation.js"></script>
+     <!--
+        <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+      -->
+</head>
+<body>
+    <div class="imgBox"></div>
+
+    <script>
+        var imgBox = document.getElementsByClassName("imgBox")[0],
+            imgBoxW = imgBox.clientWidth,
+            imgBoxH = imgBox.clientHeight,
+            arr = [];
+        console.log(imgBoxW,imgBoxH);
+        // 生成一个数组，记录盒子
+            for(var i=0;i<100;i++){
+                arr.push(i);
+            }
+            console.log(arr);
+        // 打乱数组
+        function sortRandom(a,b) {
+                return Math.random()>0.5? -1:1;
+        }
+        arr.sort(sortRandom);
+        console.log(arr);
+        // 生成盒子，执行飞入动画
+            i = 0;
+            flyInto();
+            function flyInto () {
+               var width = imgBoxW/10,
+                   height = imgBoxH/10,
+                   top = Math.floor(arr[i]/10)*height,
+                   left = (arr[i]%10)*width,
+                   str = '<div style = "position:absolute; width:' + width +'px;height:'+ height +
+                       'px;background:url(images/n.png) -' + left + 'px -'+ top +'px;"></div>';
+                   imgBox.innerHTML += str,
+                   showBox = imgBox.getElementsByTagName("div")[i];
+                   console.log(showBox);
+                    //console.log(width,height);
+                    console.log(top,left);
+
+                   animation(showBox,{
+                       data:{
+                           top:top,
+                           left:left
+                       }
+                   },100,function () {
+                       i++;
+                       typeof (arr[i])=="undefined"? cancelAnimationFrame(flyInto) : requestAnimationFrame(flyInto)
+                   })
+            }
+
+    </script>
+</body>
+</html>

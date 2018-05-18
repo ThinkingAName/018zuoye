@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce2deadc-2e4e-4dbf-bce8-1c467c49d447" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/ImgFlyInto.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/randomColor.html" afterPath="$PROJECT_DIR$/randomColor.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,14 +17,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="randomColor.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="randomColor.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/randomColor.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
+            <state relative-caret-position="-417">
               <caret line="50" column="30" lean-forward="false" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
               <folding>
-                <marker date="1526475505840" expanded="true" signature="2161:2179" ph="..." />
-                <marker date="1526475505840" expanded="true" signature="2161:2190" ph="..." />
+                <marker date="1526656364302" expanded="true" signature="2161:2179" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImgFlyInto.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ImgFlyInto.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="341">
+              <caret line="73" column="81" lean-forward="false" selection-start-line="73" selection-start-column="81" selection-end-line="73" selection-end-column="81" />
+              <folding>
+                <marker date="1526664209543" expanded="true" signature="1864:2008" ph="..." />
               </folding>
             </state>
           </provider>
@@ -48,6 +59,7 @@
         <option value="$PROJECT_DIR$/countDown.html" />
         <option value="$PROJECT_DIR$/imgShow.html" />
         <option value="$PROJECT_DIR$/randomColor.html" />
+        <option value="$PROJECT_DIR$/ImgFlyInto.html" />
       </list>
     </option>
   </component>
@@ -57,9 +69,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="238" />
-    <option name="y" value="65" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-41" />
     <option name="width" value="1346" />
     <option name="height" value="781" />
   </component>
@@ -125,6 +136,7 @@
       <updated>1526464039209</updated>
       <workItem from="1526464041223" duration="7727000" />
       <workItem from="1526474240505" duration="1267000" />
+      <workItem from="1526657643915" duration="6493000" />
     </task>
     <task id="LOCAL-00001" summary="新增倒计时页面跳转">
       <created>1526468897736</created>
@@ -144,10 +156,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8994000" />
+    <option name="totallyTimeSpent" value="15487000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="238" y="65" width="1346" height="781" extended-state="1" />
+    <frame x="-41" y="0" width="1346" height="781" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962406" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -190,8 +202,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1526475505840" expanded="true" signature="2161:2179" ph="..." />
-            <marker date="1526475505840" expanded="true" signature="2161:2190" ph="..." />
+            <marker date="1526656364302" expanded="true" signature="2161:2179" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/randomColor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1526656364302" expanded="true" signature="2161:2179" ph="..." />
           </folding>
         </state>
       </provider>
@@ -212,11 +233,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/randomColor.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
+        <state relative-caret-position="-417">
           <caret line="50" column="30" lean-forward="false" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
           <folding>
-            <marker date="1526475505840" expanded="true" signature="2161:2179" ph="..." />
-            <marker date="1526475505840" expanded="true" signature="2161:2190" ph="..." />
+            <marker date="1526656364302" expanded="true" signature="2161:2179" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ImgFlyInto.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="73" column="81" lean-forward="false" selection-start-line="73" selection-start-column="81" selection-end-line="73" selection-end-column="81" />
+          <folding>
+            <marker date="1526664209543" expanded="true" signature="1864:2008" ph="..." />
           </folding>
         </state>
       </provider>
