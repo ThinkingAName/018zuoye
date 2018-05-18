@@ -68,8 +68,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-41" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-11" />
+    <option name="y" value="-12" />
     <option name="width" value="1346" />
     <option name="height" value="781" />
   </component>
@@ -135,7 +136,7 @@
       <updated>1526464039209</updated>
       <workItem from="1526464041223" duration="7727000" />
       <workItem from="1526474240505" duration="1267000" />
-      <workItem from="1526657643915" duration="6532000" />
+      <workItem from="1526657643915" duration="6593000" />
     </task>
     <task id="LOCAL-00001" summary="新增倒计时页面跳转">
       <created>1526468897736</created>
@@ -158,17 +159,24 @@
       <option name="project" value="LOCAL" />
       <updated>1526664365489</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="新增图片飞入">
+      <created>1526664385716</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1526664385716</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15526000" />
+    <option name="totallyTimeSpent" value="15587000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-41" y="0" width="1346" height="781" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962406" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24304539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
